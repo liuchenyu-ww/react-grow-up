@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .top {
+    margin-top: 112px;
+    text-align: center;
+
+    .logo {
+      animation: logo-spin infinite 20s linear;
+      width: 80px;
+      height: 80px;
+    }
+    
+    @keyframes logo-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .title {
+      font-size: 16px;
+      text-transform: uppercase;
+      position: relative;
+      vertical-align: middle;
+    }
+  }
+
+  .login {
+    width: 300px;
+    margin: 20px auto 0;
+  
+    .form {
+      width: 100%;
+  
+      .forgot {
+        float: right;
+      }
+  
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
